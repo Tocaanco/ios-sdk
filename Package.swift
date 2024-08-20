@@ -11,11 +11,10 @@ let package = Package(
     products: [
         .library(
             name: "WherebySDK",
-            targets: ["WherebySDK", "mediasoup_client_ios", "WebRTC"])
+            targets: ["WherebySDK", "mediasoup_client_ios"])
     ],
     targets: [
         .binaryTarget(name: "WherebySDK", path: "WherebySDK.xcframework"),
-        .binaryTarget(name: "mediasoup_client_ios", path: "mediasoup_client_ios.xcframework"),
-        .binaryTarget(name: "WebRTC", path: "WebRTC.xcframework")
+        .binaryTarget(name: "mediasoup_client_ios", path: "mediasoup_client_ios.xcframework")
     ]
 )
